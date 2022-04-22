@@ -2,7 +2,7 @@
 defaults: &defaults
   docker:
     - image: quay.io/pantheon-public/build-tools-ci:6.x
-  working_directory: ~/example_wordpress_composer
+  working_directory: ~/petsmart-afp
   environment:
     #=========================================================================
     # In addition to the environment variables defined in this file, also
@@ -244,10 +244,10 @@ workflows:
             branches:
               ignore:
                 - master
-      - behat_test:
-          requires:
-            - deploy_to_pantheon
-            - visual_regression_test
+      # - behat_test:
+      #     requires:
+      #       - deploy_to_pantheon
+      #       - visual_regression_test
 
   scheduled_update_check:
     triggers:
