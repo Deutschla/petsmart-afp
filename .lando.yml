@@ -1,0 +1,7 @@
+name: petsmart-afp
+recipe: pantheon
+config:
+  framework: wordpress
+  site: petsmart-afp
+  id: c2144a63-dc7a-401a-9550-06c1101f99da
+  webroot: web
