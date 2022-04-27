@@ -79,6 +79,7 @@ jobs:
       - run:
           name: run static tests
           command: ./.ci/test/static/run
+          no_output_timeout: 30m
 
       - save_cache:
           key: composer-cache-{{ checksum "composer.lock" }}
