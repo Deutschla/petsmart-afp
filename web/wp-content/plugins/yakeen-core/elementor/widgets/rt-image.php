@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 class RT_Image extends Custom_Widget_Base {
 
 	public function __construct( $data = [], $args = null ){
-		$this->rt_name = esc_html__( 'RT Image', 'yakeen-core' );
+		$this->rt_name = esc_html__( 'RT Image AAA', 'yakeen-core' );
 		$this->rt_base = 'rt-image';
 		parent::__construct( $data, $args );
 	}
