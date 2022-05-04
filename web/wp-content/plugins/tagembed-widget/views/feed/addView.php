@@ -26,7 +26,7 @@ if (!empty($__tagembed__widgets)):
                     </select>
                     <span class="__tagembed__error">Error message here.</span>
                 </div>
-                <div class="__tagembed__copycode">
+                <div class="__tagembed__copycode" id="__tagembed__copycode" style="display: none;">
                     <div class="__tabembed__fromrow">
                         <span>Embed Short Code</span>
                         <div onclick="__tagembed__copyToShortCode();" id="__tagembed__shortCode" class="__tagembed__copyvalue"></div>

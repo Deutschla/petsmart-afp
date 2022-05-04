@@ -1,9 +1,8 @@
 <?php
 include_once TAGEMBED_PLUGIN_DIR_PATH . "views/includes/headView.php";
 include_once TAGEMBED_PLUGIN_DIR_PATH . "views/includes/headerView.php";
-
 if (TAGEMBED_PLUGIN_MODE == "live"):
-    wp_enqueue_script('__script-theme-js', 'https://cdn.tagembed.com/wp-plugin/js/upgrade/tagembed.upgrade.script.js', ['jquery'], TAGEMBED_PLUGIN_VERSION, true);
+    wp_enqueue_script('__script-upgrade-js', 'https://cdn.tagembed.com/wp-plugin/js/upgrade/tagembed.upgrade.script.js', ['jquery'], TAGEMBED_PLUGIN_VERSION, true);
 else:
     wp_enqueue_script('__script-upgrade-js', TAGEMBED_PLUGIN_URL . '/assets/js/upgrade/tagembed.upgrade.script.js', ['jquery'], TAGEMBED_PLUGIN_VERSION, true);
 endif;

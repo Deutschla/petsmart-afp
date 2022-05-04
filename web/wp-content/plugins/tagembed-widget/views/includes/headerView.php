@@ -20,7 +20,7 @@
         <div class="__tagembed__tabtwoleft">
             <div class="__tagembed__selectwid">
                 <?php if (!empty($__tagembed__widgets)): ?>
-                    <?php if (!in_array($__tagembed__active_menue_id, [1, 5, 7, 8, 9])): ?>
+                    <?php if (!in_array($__tagembed__active_menue_id, [1, 7, 8, 9])): ?>
                         <span class="<?= in_array($__tagembed__active_menue_id, [2]) ? "add-select-widget" : ""; ?> ">Selected Widget</sub></span>
                         <select name="__tagembed__widgets" id="__tagembed__widgets">
                             <?php foreach ($__tagembed__widgets as $__tagembed__widget): ?>

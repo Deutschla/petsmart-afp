@@ -6,7 +6,7 @@ Tags: Instagram Feed, Social Media Feed, Facebook Feed, Twitter Feed, Google Rev
 Requires at least: 5.1
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 2.9
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,7 +83,7 @@ Note: In Google Review Widget Upcoming google review feed will not be automatica
 * Click on **Add Feed** and select network as **YouTube** to collect YouTube Videos.
 * Select your feed filter connection type from: Channel, Playlist, YouTube Shorts etc. to fetch YouTube Videos as per your preference.
 * Choose Theme from **10+ Layouts**, Personalize YouTube Gallery Widget style and filter YouTube Videos as per your requirement.
-* Click on the Display tab Section to preview the YouTube Gallery and **Copy ShortCode** to [Embed YouTube Video Gallery](https://tagembed.com/blog/embed-youtube-video-on-wordpress/).
+* Click on the Display tab Section to preview the YouTube Gallery and **Copy ShortCode** to [Embed YouTube Video Gallery on WordPress](https://tagembed.com/blog/embed-youtube-video-on-wordpress/).
 * Paste the shortcode on your desired page or post and update it to embed YouTube Video Gallery successfully.
 
 = Steps to Embed Linkedin Feeds on WordPress using Tagembed WP plugin =
@@ -91,12 +91,12 @@ Note: In Google Review Widget Upcoming google review feed will not be automatica
 * Click on **Add Feed** and select network as **Linkedin** to collect LinkedIn Feeds.
 * Select your feed filter connection type from: Company Page URL, Post URL, etc. to fetch Linkedin Posts as per your preference.
 * Choose Theme from **10+ Layouts**, Personalize Linkedin Feed Widget style and filter Linkedin Posts as per your requirement.
-* Click on the Display tab Section to preview the Linkedin Posts and **Copy ShortCode** to [Embed Linkedin Feed](https://tagembed.com/support/embed-linkedin-feeds-on-wordpress/).
+* Click on the Display tab Section to preview the Linkedin Posts and **Copy ShortCode** to [Embed Linkedin Feed on WordPress](https://tagembed.com/support/embed-linkedin-feeds-on-wordpress/).
 * Paste the shortcode on your desired page or post and update it to embed Linkedin Feed Widget successfully.
 
 Note: Company Page URL - In Linkedin Widget this method is only available with the **Plus Plan**.
 
-By following the above mentioned steps you will successfully embed social media feeds on WordPress website in just a few mins.
+By following the above mentioned steps you will successfully [add social media feed to WordPress](https://tagembed.com/blog/add-social-media-feed-to-wordpress/) website in just a few mins.
 
 
 == Main Features Of The Tagembed Social Media Feeds WordPress Plugin ==
@@ -134,105 +134,172 @@ Post activation, visit Tagembed widget WordPress plugin and collect social media
 Step by Step Guide with Screen Shots : [Installation Guide: Social Media Feed Plugin For WordPress](https://tagembed.com/support/social-media-feed-plugin-for-wordpress/)
 
 == Changelog ==
+= 3.1 =
+  * New: Now choose what happens when you click on your embedded Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc. Want to redirect them to the specific social platform or open pop-up or no action, based on your requirement.
+  * New: Introducing custom CSS option into the plugin. Now make custom style of your widget so that your Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed, Pinterest feed, YouTube Shorts, etc., look astonishing and also blends perfectly with your website theme.
+  * FIX: Twitter Feed: Alignment of the profile info was not calibrated properly. Now, profile information for your Twitter Feed will be displayed in proper alignment.
+  * FIX: Youtube Video: Small bugs fix for YouTube Shorts Feed.
+  * FIX: Instagram Feed caching.
+  * NOTE: Tested with WordPress Version 5.9.3
+
+= 3.0 =
+  * New: Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc: Now choose your custom layout from the customize tab. You can set your desired number of row & column for your Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc., directly from the plugin. Earlier their was no such option.
+  * New: Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc: Make your personalized card style using the new card settings option under the customize tab. You can set to display or hide author details, content, font style and many more for your Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed and other types of social media feeds that Tagembed offers, directly from the plugin. Earlier plugin didn't had such option to personalize your card.
+  * FIX: Instagram Feed: Alignment of the profile info was not calibrated properly. Now, profile information for your Instagram Feed will be displayed in proper alignment.
+  * FIX: Twitter Feed: Small bugs fix for Twitter Hashtag Feed.
+  * FIX: YouTube Feed caching.
+  * NOTE: Tested with WordPress Version 5.9.3
+
 = 2.9 =
-Added enhanced way to collect social media feed using Social Media Aggregator WordPress Plugin from Airbnb Reviews, Pinterest board, Pinterest Handle, Pinterest Stories and RSS.
-Earlier users could collect Pinterest Stories, Pinterest Feed, Airbnb Reviews, RSS Feed using the Tagembed Website Dashboard now with the new update we have introduced new sources such as Airbnb Reviews, Pinterest board, Pinterest Handle, Pinterest Stories and RSS so that you can collect RSS Feed, Airbnb Reviews and Pinterest Feed right from the plugin to your wordpress website.
-Bugs Fix for Linkedin Feed, Instagram Feed, Facebook Feed, Twitter Feed, Youtube Gallery, and Google Reviews. Also, now users can add several Linkedin posts using Linkedin Widget directly from the Tagembed Social Media Feed WordPress Plugin to WordPress site.
+  Added enhanced way to collect social media feed using Social Media Aggregator WordPress Plugin from Airbnb Reviews, Pinterest board, Pinterest Handle, Pinterest Stories and RSS.
+  Earlier users could collect Pinterest Stories, Pinterest Feed, Airbnb Reviews, RSS Feed using the Tagembed Website Dashboard now with the new update we have introduced new sources such as Airbnb Reviews, Pinterest board, Pinterest Handle, Pinterest Stories and RSS so that you can collect RSS Feed, Airbnb Reviews and Pinterest Feed right from the plugin to your wordpress website.
+  Bugs Fix for Linkedin Feed, Instagram Feed, Facebook Feed, Twitter Feed, Youtube Gallery, and Google Reviews. Also, now users can add several Linkedin posts using Linkedin Widget directly from the Tagembed Social Media Feed WordPress Plugin to WordPress site.
+
 = 2.8 =
-Introducing more ways to embed Instagram Feed on WordPress website such as: Instagram TV or IGTV, Instagram Reels, Instagram Stories, Instagram Mentions, and Instagram Tagged Feeds into your Instagram Widget, directly using Tagembed Social Media Feed WordPress Plugin.
-Minor Bugs Fix for Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed.
-Earlier there was a bug which wouldn't let user to collect all of the latest Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed. Now, with the new update not only users will be able to collect Instagram Feed using different method but also all of the latest social feeds from Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed will be collected in the Facebook Widget, Twitter Widget, YouTube Widget, Google Review Widget and Linkedin Widget, repectively.
+  Introducing more ways to embed Instagram Feed on WordPress website such as: Instagram TV or IGTV, Instagram Reels, Instagram Stories, Instagram Mentions, and Instagram Tagged Feeds into your Instagram Widget, directly using Tagembed Social Media Feed WordPress Plugin.
+  Minor Bugs Fix for Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed.
+  Earlier there was a bug which wouldn't let user to collect all of the latest Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed. Now, with the new update not only users will be able to collect Instagram Feed using different method but also all of the latest social feeds from Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed will be collected in the Facebook Widget, Twitter Widget, YouTube Widget, Google Review Widget and Linkedin Widget, repectively.
+
 = 2.7 =
-Fixed PHP warnings and notices and tested upto wordpress 2.9 version.
-Fixed bugs for Instagram Slider, Facebook Feed, Youtube Gallery,  Twitter Feed, Instagram Stories, Google Reviews and Pinterest.
-Earlier Instagram Business account were not connecting properly, now you can easily connect your Instagram account to add Instagram Feed and Instagram Hashtag from any connected Instagram account.
-Same with Facebook Feed, Youtube Channel, Twitter Feed and Google Reviews. Now the connection between the networks are established and can be collected on the respective social media widget.
+  Fixed PHP warnings and notices and tested upto wordpress 2.9 version.
+  Fixed bugs for Instagram Slider, Facebook Feed, Youtube Gallery,  Twitter Feed, Instagram Stories, Google Reviews and Pinterest.
+  Earlier Instagram Business account were not connecting properly, now you can easily connect your Instagram account to add Instagram Feed and Instagram Hashtag from any connected Instagram account.
+  Same with Facebook Feed, Youtube Channel, Twitter Feed and Google Reviews. Now the connection between the networks are established and can be collected on the respective social media widget.
+
 = 2.6 =
-* Fixed Bugs for Facebook Feed, Facebook Widget, Instagram Feed & Instagram Widget and Improved Design for Twitter Feed, Twitter Widget, YouTube Video & YouTube Gallery.
+  * Fixed Bugs for Facebook Feed, Facebook Widget, Instagram Feed & Instagram Widget and Improved Design for Twitter Feed, Twitter Widget, YouTube Video & YouTube Gallery.
+
 = 2.5 =
-* Now Display LinkedIn Feeds in Linkedin Widget, Youtube Videos and Youtube Shorts in YouTube Gallery and embed on website.
+  * Now Display LinkedIn Feeds in Linkedin Widget, Youtube Videos and Youtube Shorts in YouTube Gallery and embed on website.
+
 = 2.4 =
-* Introducing New Features to Display social media Feeds according to your need.
-* Earlier Instagram Feed, YouTube Videos, Twitter Feed, Facebook feed cannot be pinned to top or highlighted. Now you Pin the post to the top, or Highlight Instagram Feed, Twitter Feed, YouTube Video, Facebook Feed.
+  * Introducing New Features to Display social media Feeds according to your need.
+  * Earlier Instagram Feed, YouTube Videos, Twitter Feed, Facebook feed cannot be pinned to top or highlighted. Now you Pin the post to the top, or Highlight Instagram Feed, Twitter Feed, YouTube Video, Facebook Feed.
+
 = 2.3 =
-* Fixed Bugs for Instagram Feeds and Improved Design for Instagram Feed display. Earlier Instagram Feed pop-up was not responsive and Instagram pop-up used to shrink automatically. Now Instagram pop-up is responsive and Instagram feed featured pop-up is not shrinking.
+  * Fixed Bugs for Instagram Feeds and Improved Design for Instagram Feed display. Earlier Instagram Feed pop-up was not responsive and Instagram pop-up used to shrink automatically. Now Instagram pop-up is responsive and Instagram feed featured pop-up is not shrinking.
+
 = 2.2 =
-* Fixed Facebook Feed, YouTube Gallery, Instagram Feed Bugs and Improved Facebook Widget Design.
+  * Fixed Facebook Feed, YouTube Gallery, Instagram Feed Bugs and Improved Facebook Widget Design.
+
 = 2.1 =
-* Added Powerful Filter Section. Choose the best social media feed to display on your website. You can filter your collected Instagram Feed, Facebook Feed, Twitter Feed, YouTube Video and etc social media feed based on the feed Post type such as images, videos, text. You can also public or private collected social media feeds.
+  * Added Powerful Filter Section. Choose the best social media feed to display on your website. You can filter your collected Instagram Feed, Facebook Feed, Twitter Feed, YouTube Video and etc social media feed based on the feed Post type such as images, videos, text. You can also public or private collected social media feeds.
+
 = 1.9 =
-* Fixed Bugs for Instagram Hashtag Feed and Improved Design for Twitter Hashtag Feed. Now you can add Instagram Feed from any Instagram Hashtag to your Instagram Widget. Also Twitter Feed got new design, when you collect Twitter Hashtag Feed it was showing some glitches in design but now Twitter feed is stable.
+  * Fixed Bugs for Instagram Hashtag Feed and Improved Design for Twitter Hashtag Feed. Now you can add Instagram Feed from any Instagram Hashtag to your Instagram Widget. Also Twitter Feed got new design, when you collect Twitter Hashtag Feed it was showing some glitches in design but now Twitter feed is stable.
+
 = 1.8 =
-* Easily Manage your plans within Wordpress Dashboard. Now you can subscribe to Tagembed Plans for accessing extra social networks like Google Reviews, Instagram Stories, YouTube Videos, RSS Feed, Vimeo Video, Pinterest feed, Linkedin Feed, Tumblr Feed, Flickr Album, Slack Channels, Yelp etc., on the dashboard itself.
+  * Easily Manage your plans within Wordpress Dashboard. Now you can subscribe to Tagembed Plans for accessing extra social networks like Google Reviews, Instagram Stories, YouTube Videos, RSS Feed, Vimeo Video, Pinterest feed, Linkedin Feed, Tumblr Feed, Flickr Album, Slack Channels, Yelp etc., on the dashboard itself.
+
 = 1.7 =
-* Social Accounts can be managed within WordPress dashboard. Earlier when you add Instagram Feed, Twitter Feed, YouTube Video and Facebook Video user was not able to see the Instagram Widget, Twitter Widget, YouTube Gallery Widget and Facebook Widget on the dashboard. Now the new dashboard will show your Instagram Feed, Twitter Feed, YouTube video and Facebook Feed in your Instagram Widget, Twitter Widget, YouTube Gallery Widget and Facebook Widget.
+  * Social Accounts can be managed within WordPress dashboard. Earlier when you add Instagram Feed, Twitter Feed, YouTube Video and Facebook Video user was not able to see the Instagram Widget, Twitter Widget, YouTube Gallery Widget and Facebook Widget on the dashboard. Now the new dashboard will show your Instagram Feed, Twitter Feed, YouTube video and Facebook Feed in your Instagram Widget, Twitter Widget, YouTube Gallery Widget and Facebook Widget.
+
 = 1.6 =
-* Making the world's easiest Social media feed plugin for wordpress. Now create and manage social media feeds directly from your wordpress dashboard and chat directly to our experts for any instant support.
+  * Making the world's easiest Social media feed plugin for wordpress. Now create and manage social media feeds directly from your wordpress dashboard and chat directly to our experts for any instant support.
+
 = 1.5 =
-* Bugs Fixes for Youtube video and Youtube playlist: Now you can create YouTube Gallery using new themes & layouts. Also YouTube video can be added in Youtube Gallery from any playlist.
-* Bugs Fixes for Instagram Feed, Twitter Feed, Facebook Feed, YouTube Playlist.
+  * Bugs Fixes for Youtube video and Youtube playlist: Now you can create YouTube Gallery using new themes & layouts. Also YouTube video can be added in Youtube Gallery from any playlist.
+  * Bugs Fixes for Instagram Feed, Twitter Feed, Facebook Feed, YouTube Playlist.
+
 = 1.4 =
-* Bugs Fixes for Youtube channel video: Earlier when collecting Youtube Videos, YouTube Channel wasn't properly added. Now after fix you can add youtube video and create a Youtube Gallery using any YouTube Channel.
-* Bugs Fixes for Instagram Feed, Twitter Feed, Facebook Feed, YouTube Themes & Layouts.
+  * Bugs Fixes for Youtube channel video: Earlier when collecting Youtube Videos, YouTube Channel wasn't properly added. Now after fix you can add youtube video and create a Youtube Gallery using any YouTube Channel.
+  * Bugs Fixes for Instagram Feed, Twitter Feed, Facebook Feed, YouTube Themes & Layouts.
+
 = 1.3 =
-* Fixed Instagram Feed Bugs and Improved Facebook Feed, Google Reviews Design.
-* New Design for Instagram Feed, Twitter Feed & YouTube Design.
+  * Fixed Instagram Feed Bugs and Improved Facebook Feed, Google Reviews Design.
+  * New Design for Instagram Feed, Twitter Feed & YouTube Design.
+
 = 1.2 =
-* Improved Design for the better view of the Instagram Feed, Twitter Feed, Google Review & Facebook Feed in Plugin.
+  * Improved Design for the better view of the Instagram Feed, Twitter Feed, Google Review & Facebook Feed in Plugin.
+
 = 1.1 =
-* Fixed Bugs for Linkedin Post, Instagram Feed and Facebook Feed also Improved Design for the better view of the plugin.
+  * Fixed Bugs for Linkedin Post, Instagram Feed and Facebook Feed also Improved Design for the better view of the plugin.
+
 = 1.0 =
-* First Release.
+  * First Release.
 
 
 == Upgrade Notice ==
+= 3.1 =
+  * New: Now choose what happens when you click on your embedded Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc. Want to redirect them to the specific social platform or open pop-up or no action, based on your requirement.
+  * New: Introducing custom CSS option into the plugin. Now make custom style of your widget so that your Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed, pinterest feed, YouTube Shorts, etc., look astonishing and also blends prefectly with your website theme.
+  * FIX: Twitter Feed: Alignment of the profile info was not calibrated properly. Now, profile information for your Twitter Feed will be displayed in proper alignment.
+  * FIX: Youtube Video: Small bugs fix for YouTube Shorts Feed.
+  * FIX: Instagram Feed caching.
+  * NOTE: Tested with WordPress Version 5.9.3
+
+= 3.0 =
+  * New: Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc: Now choose your custom layout from the customize tab. You can set your desired number of row & column for your Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc., directly from the plugin. Earlier their was no such option.
+  * New: Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed etc: Make your personalized card style using the new card settings option under the customize tab. You can set to display or hide author details, content, font style and many more for your Instagram Feed, Facebook Feed, Twitter Feed, Google Reviews, YouTube Video, RSS Feed and other types of social media feeds that Tagembed offers, directly from the plugin. Earlier plugin didn't had such option to personalize your card.
+  * FIX: Instagram Feed: Alignment of the profile info was not calibrated properly. Now, profile information for your Instagram Feed will be displayed in proper alignment.
+  * FIX: Twitter Feed: Small bugs fix for Twitter Hashtag Feed.
+  * FIX: YouTube Feed caching.
+
 = 2.9 =
 Added enhanced way to collect social media feed using Social Media Aggregator WordPress Plugin from Airbnb Reviews, Pinterest board, Pinterest Handle, Pinterest Stories and RSS.
 Earlier users could collect Pinterest Stories, Pinterest Feed, Airbnb Reviews, RSS Feed using the Tagembed Widget now with the new update we have introduced new sources such as Airbnb Reviews, Pinterest board, Pinterest Handle, Pinterest Stories and RSS so that you can collect RSS Feed, Airbnb Reviews and Pinterest Feed right from the plugin to your wordpress website.
 Bugs Fix for Linkedin Feed, Instagram Feed, Facebook Feed, Twitter Feed, Youtube Gallery, and Google Reviews. Also, now users can add several Linkedin posts using Linkedin Widget directly from the Tagembed Social Media Feed WordPress Plugin to WordPress site.
+
 = 2.8 =
 Introducing more ways to embed Instagram Feed on WordPress website such as: Instagram TV or IGTV, Instagram Reels, Instagram Stories, Instagram Mentions, and Instagram Tagged Feeds into your Instagram Widget, directly using Tagembed Social Media Feed WordPress Plugin.
 Minor Bugs Fix for Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed.
 Earlier there was a bug which wouldn't let user to collect all of the latest Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed. Now, with the new update not only users will be able to collect Instagram Feed using different method but also all of the latest social feeds from Facebook Feed, Twitter Feed, Youtube Gallery, Google Reviews and Linkedin Feed will be collected in the Facebook Widget, Twitter Widget, YouTube Widget, Google Review Widget and Linkedin Widget, repectively.
+
 = 2.7 =
 Fixed PHP warnings and notices and tested upto wordpress 2.9 version.
 Fixed bugs for Instagram Slider, Facebook Feed, Youtube Gallery,  Twitter Feed, Instagram Stories, Google Reviews and Pinterest.
 Earlier Instagram Business account were not connecting properly, now you can easily connect your Instagram account to add Instagram Feed and Instagram Hashtag from any connected Instagram account.
 Same with Facebook Feed, Youtube Channel, Twitter Feed and Google Reviews. Now the connection between the networks are established and can be collected on the respective social media widget.
+
 = 2.6 =
 Fixed Bugs for Facebook Feed, Facebook Widget, Instagram Feed & Instagram Widget and Improved Design for Twitter Feed, Twitter Widget, YouTube Video & YouTube Gallery.
+
 = 2.5 =
 Now Display LinkedIn Feeds in Linkedin Widget, Youtube Videos and Youtube Shorts in YouTube Gallery and embed on website.
+
 = 2.4 =
 Introducing New Features to Display social media Feeds according to your need.
 Earlier Instagram Feed, YouTube Videos, Twitter Feed, Facebook feed cannot be pinned to top or highlighted. Now you Pin the post to the top, or Highlight Instagram Feed, Twitter Feed, YouTube Video, Facebook Feed.
+
 = 2.3 =
 Fixed Bugs for Instagram Feeds and Improved Design for Instagram Feed display and social media widget. Earlier Instagram Feed pop-up was not responsive and Instagram pop-up used to shrink automatically. Now Instagram pop-up is responsive and Instagram feed featured pop-up is not shrinking.
 Fixed Twitter Feed Bugs and Improved Social Media Widget Design.
+
 = 2.2 =
 Fixed Facebook Feed, YouTube Gallery, Instagram Feed Bugs and Improved Facebook Widget Design.
+
 = 2.1 =
 Added Powerful Filter Section. Choose the best social media feeds to display on your website. You can filter your collected Instagram Feed, Facebook Feed, Twitter Feed, YouTube Video and etc social media feeds based on the feed Post type such as images, videos, text. You can also public or private collected social media feeds.
+
 = 1.9 =
 Fixed Bugs for Instagram Hashtag Feed and Improved Design for Twitter Hashtag Feed. Now you can add Instagram Feed from any Instagram Hashtag to your Instagram Widget. Also Twitter Feed got new design, when you collect Twitter Hashtag Feed it was showing some glitches in design but now Twitter feed is stable.
+
 = 1.8 =
 Easily Manage your plans within Wordpress Dashboard. Now you can subscribe to Tagembed Plans for accessing extra social networks like Google Reviews, Instagram Stories, YouTube Videos, RSS Feed, Vimeo Video, Pinterest feed, Linkedin Feed, Tumblr Feed, Flickr Album, Slack Channels, Yelp etc., on the dashboard itself.
+
 = 1.7 =
 Social Accounts can be managed within WordPress dashboard. Earlier when you add Instagram Feed, Twitter Feed, YouTube Video and Facebook Video user was not able to see the Instagram Widget, Twitter Widget, YouTube Gallery Widget and Facebook Widget on the dashboard. Now the new dashboard will show your Instagram Feed, Twitter Feed, YouTube video and Facebook Feed in your Instagram Widget, Twitter Widget, YouTube Gallery Widget and Facebook Widget.
+
 = 1.6 =
 Making the world's easiest Social media feeds plugin for wordpress. Now create and manage social media feeds directly from your wordpress dashboard and chat directly to our experts for any support.
+
 = 1.5 =
 Bugs Fixes for Youtube video and Youtube playlist: Now you can create YouTube Gallery using new themes & layouts. Also YouTube video can be added in Youtube Gallery from any playlist.
 Bugs Fixes for Instagram Feed, Twitter Feed, Facebook Feed, YouTube Playlist, Google Reviews.
+
 = 1.4 =
 Bugs Fixes for Youtube channel video: Earlier when collecting Youtube Videos, YouTube Channel wasn't properly added. Now after fix you can add youtube video and create a Youtube Gallery using any YouTube Channel.
 Bugs Fixes for Instagram Feed, Twitter Feed, Facebook Feed, YouTube Themes & Layouts.
+
 = 1.3 =
 Fixed Instagram Feed Bugs and Improved Facebook Feed, Google Reviews Design.
+
 = 1.2 =
 Improved Design for the better view of the Instagram Feed, Twitter Feed, Google Review & Facebook Feed in Plugin.
+
 = 1.1 =
 Fixed Bugs for Linkedin Post, Instagram Feed and Facebook Feed also Improved Design for the better view of the plugin.
+
 = 1.0 =
 This is the first release of Tagembed Social Media Feeds WordPress Plugin. If you find any issues, please contact us on [tagembed.com](https://tagembed.com/contact-us/)
 

@@ -51,9 +51,11 @@ if (!empty($__tagembed__widgets)):
                                 </a>
                             </li>
                         </ul>
+                        <span onclick="__tagembed__openFullscreen();" class="__tagembed_expand">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </span>
                     </div>
                     <div class="__tagembed__viewofpreview">
-                        <!--<div class="__tagembed__loader" id="__tagembed__display_preview_loader"><img src="https://cdn.tagembed.com/libraries/loader/images/loader.gif"/></br>Please Wait...</div>-->
                         <div class="__tagembed__previewdesk" id="__tagembed__widget_display_preview_id"></div>
                     </div>
                 </div>

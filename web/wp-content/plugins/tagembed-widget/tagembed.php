@@ -3,7 +3,7 @@
  * Plugin Name:       Tagembed Widget
  * Plugin URI:        https://tagembed.com/
  * Description:       Display Facebook feed, Instagram feed, Twitter feed, YouTube Videos and more social feeds from 15+ social networks on any page, posts or widgets using shortcode. Beautifully clean, customizable, and responsive Social Media Feed Widget Plugin for WordPress.
- * Version:           2.9
+ * Version:           3.1
  * Author:            Tagembed
  * Author URI:        https://tagembed.com/
  */
@@ -11,7 +11,7 @@ if (!defined('WPINC'))
     die;
 /* --Start-- Create Constant */
 !defined('TAGEMBED_PLUGIN_MODE') && define('TAGEMBED_PLUGIN_MODE', "live");
-!defined('TAGEMBED_PLUGIN_VERSION') && define('TAGEMBED_PLUGIN_VERSION', '2.9');
+!defined('TAGEMBED_PLUGIN_VERSION') && define('TAGEMBED_PLUGIN_VERSION', '3.1');
 !defined('TAGEMBED_PLUGIN_DIR_PATH') && define('TAGEMBED_PLUGIN_DIR_PATH', plugin_dir_path(__FILE__));
 !defined('TAGEMBED_PLUGIN_URL') && define('TAGEMBED_PLUGIN_URL', plugin_dir_url(__FILE__));
 !defined('TAGEMBED_PLUGIN_REDIRECT_URL') && define('TAGEMBED_PLUGIN_REDIRECT_URL', get_admin_url(null, 'admin.php?page='));
@@ -577,7 +577,8 @@ function __tagembed__dataAjaxHandler() {
                             $__tagembed__feed_input_data['hashtagOlder'] = sanitize_key(isset($data->hashtagOlder) ? 1 : 0);
                             break;
                     endswitch;
-                    $__tagembed__feed_input_data['auth'] = 1;
+                    if (!in_array($__tagembed__feed_filter_id, [34, 73]))
+                        $__tagembed__feed_input_data['auth'] = 1;
                     break;
                 case 23:
                     if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $data->feed))
@@ -779,6 +780,74 @@ function __tagembed__dataAjaxHandler() {
             $response = __tagembed__manageApiResponse($response);
             unset($param);
             return __tagembed__exitWithSuccess();
+            break;
+        case "__tagembed__get_customization_option":
+            if (empty($__tagembed__user_details) || empty($data->widgetId))
+                return __tagembed__exitWithDanger();
+            /* --Start-- Manage Param Data */
+            $param['widgetId'] = sanitize_key($data->widgetId);
+            $param['userId'] = sanitize_key($__tagembed__user_details->userId);
+            /* --End-- Manage Param Data */
+            $response = __tagembed__wpApiCall(TAGEMBED_PLUGIN_API_URL . 'apicustomization/get', $param, ['Authorization:' . $__tagembed__user_details->accessToken]);
+            unset($param);
+            $response = __tagembed__manageApiResponse($response);
+            return __tagembed__exitWithSuccess($response);
+            break;
+        case "__tagembed__update_layout_customization_option":
+            /* --Start-- Manage Param Data */
+            $param['widgetId'] = sanitize_key($data->widgetId);
+            $param['userId'] = sanitize_key($__tagembed__user_details->userId);
+            $param['personalizationId'] = sanitize_key($data->personalizationId);
+            $param['themeRuleId'] = sanitize_key($data->themeRuleId);
+            $param['numberOfPosts'] = sanitize_key($data->numberOfPosts);
+            $param['padding'] = sanitize_key($data->padding);
+            $param['minimumPostWidth'] = sanitize_key($data->minimumPostWidth);
+            $param['columnCount'] = sanitize_key($data->columnCount);
+            $param['columnCountMobile'] = sanitize_key($data->columnCountMobile);
+            $param['loadMoreStatus'] = sanitize_key($data->loadMoreStatus);
+            $param['postText'] = sanitize_key($data->postText);
+            $param['trimcontent'] = sanitize_key($data->trimcontent);
+            $param['mobilePopup'] = sanitize_key($data->mobilePopup);
+            $param['postFeatured'] = sanitize_key($data->postFeatured);
+            /* --End-- Manage Param Data */
+            $response = __tagembed__wpApiCall(TAGEMBED_PLUGIN_API_URL . 'apicustomization/layout', $param, ['Authorization:' . $__tagembed__user_details->accessToken]);
+            unset($param);
+            $response = __tagembed__manageApiResponse($response);
+            return __tagembed__exitWithSuccess($response);
+            break;
+        case "__tagembed__update_card_customization_option":
+            /* --Start-- Manage Param Data */
+            $param['widgetId'] = sanitize_key($data->widgetId);
+            $param['userId'] = sanitize_key($__tagembed__user_details->userId);
+            $param['personalizationId'] = sanitize_key($data->personalizationId);
+            $param['themeRuleId'] = sanitize_key($data->themeRuleId);
+            $param['fontColor'] = $data->fontColor;
+            $param['authorColor'] = $data->authorColor;
+            $param['cardColor'] = $data->cardColor;
+            $param['fontSize'] = sanitize_key($data->fontSize);
+            $param['font'] = sanitize_key($data->font);
+            $param['shareOption'] = sanitize_key($data->shareOption);
+            $param['hideContent'] = sanitize_key($data->hideContent);
+            $param['postAuthor'] = sanitize_key($data->postAuthor);
+            $param['postTime'] = sanitize_key($data->postTime);
+            /* --End-- Manage Param Data */
+            $response = __tagembed__wpApiCall(TAGEMBED_PLUGIN_API_URL . 'apicustomization/card', $param, ['Authorization:' . $__tagembed__user_details->accessToken]);
+            unset($param);
+            $response = __tagembed__manageApiResponse($response);
+            return __tagembed__exitWithSuccess($response);
+            break;
+        case "__tagembed__update_other_customization_option":
+            /* --Start-- Manage Param Data */
+            $param['widgetId'] = sanitize_key($data->widgetId);
+            $param['userId'] = sanitize_key($__tagembed__user_details->userId);
+            $param['personalizationId'] = sanitize_key($data->personalizationId);
+            $param['themeRuleId'] = sanitize_key($data->themeRuleId);
+            $param['css'] = $data->css;
+            /* --End-- Manage Param Data */
+            $response = __tagembed__wpApiCall(TAGEMBED_PLUGIN_API_URL . 'apicustomization/other', $param, ['Authorization:' . $__tagembed__user_details->accessToken]);
+            unset($param);
+            $response = __tagembed__manageApiResponse($response);
+            return __tagembed__exitWithSuccess($response);
             break;
         default:
             return __tagembed__exitWithDanger();

@@ -12,8 +12,6 @@ wp_enqueue_script('__script-isotope-packery-js', 'https://cdn.tagembed.com/wp-pl
 /* Lazy Loader Script */
 wp_enqueue_script('__script-lazy-loading-js', 'https://cdn.tagembed.com/wp-plugin/js/lazyload.js', ['jquery'], TAGEMBED_PLUGIN_VERSION, true);
 ?>
-
-
 <div  class="__tagembed__sourcerow __tagembed__filtermoderation" style="display:<?= empty($__tagembed__widgets) ? 'none' : ''; ?>;">
     <div class="__tagembed__tabheading">
         <div class="__tagembed__modcheckall">
