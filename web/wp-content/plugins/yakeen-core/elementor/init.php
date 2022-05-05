@@ -89,7 +89,7 @@ class Custom_Widget_Init {
 	public function widget_categoty( $class ) {
 		$id         = YAKEEN_CORE_THEME_PREFIX . '-widgets'; // Category /@dev
 		$properties = array(
-			'title' => __( 'RadiusTheme Elements', 'yakeen-core' ),
+			'title' => __( 'Petsmart Elements', 'yakeen-core' ),
 		);
 
 		Plugin::$instance->elements_manager->add_category( $id, $properties );
