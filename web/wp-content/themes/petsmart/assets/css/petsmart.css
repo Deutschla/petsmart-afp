@@ -6,6 +6,14 @@ body {
 }
 
 /*-------------------------------------
+#. Color references
+#DD2834 Loving Red
+#FFFFFF White
+#B6DCE$ Joyful Blue
+#206EF6 Zoomies Blue
+---------------------------------------*/
+
+/*-------------------------------------
 #. Headings
 ---------------------------------------*/
 h1, .ps-headline-1 {
@@ -57,27 +65,39 @@ p, .ps-body-copy-1 {
 /*-------------------------------------
 #. Buttons
 ---------------------------------------*/
-.ps-primary-cta {
+.ps-cta-1 {
 	font-family: "Euclid Circular B", serif;
 	background-color: #DD2834;
-	border: 1px solid #DD2834;
+	border: 2px solid #DD2834;
 	color: #ffffff;
 	align-items: center;
-	padding: 10px 20px 10px;
-	border-radius: 25px;
+	padding: 9px 28px;
+	border-radius: 100px;
 	display: inline-flex;
+	font-weight: bold;
+}
+.ps-cta-1:hover {
+	background-color: #FFFFFF;
+	color: #DD2834;
 }
 
-.ps-secondary-cta {
-	background-color: transparent;
+.ps-cta-2 {
 	font-size: 20px;
 	color: #206EF6;
+	font-weight: bold;
+}
+
+.ps-cta-2:hover {
+	color: #206EF6;
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 
 
-/*Breakpoints*/
+/*-------------------------------------
+#. Breakpoints references 
+---------------------------------------*/
 @media (min-width: 1200px) {
 
 }
