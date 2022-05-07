@@ -58,6 +58,8 @@ class Custom_Widget_Init {
 			'rt-image'      					=> 'RT_Image',
 			'ps-breadcrumb'      					=> 'PS_Breadcrumb',
 			'ps-image'      					=> 'PS_Image',
+            'ps-hero'      					=> 'PS_Hero',
+            'ps-card'      					=> 'PS_Card',
 			'ps-tout'      					=> 'PS_Tout',
 			'ps-tout-grid'      					=> 'PS_Tout_Grid',
 			'rt-shape'      					=> 'RT_Shape',

@@ -13,7 +13,6 @@ use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
 extract( $data );
 
-
 if ( ! empty( $data['button_url']['url'] ) ) {
 	$attr        = '';
 	$cta         = '';
@@ -29,31 +28,34 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 	$attr .= ! empty( $data['button_url']['is_external'] ) ? ' target="_blank"' : '';
 	$attr .= ! empty( $data['button_url']['nofollow'] ) ? ' rel="nofollow"' : '';
 
-	$cta = '<a ' . $attr . '>' . esc_html( $data['rt_cta_label'] ) . '</a>';
+	$cta = '<a ' . $attr . '>' . esc_html( $data['ps_cta_label'] ) . '</a>';
 }
 
-	$main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_image_size', 'main_image' );
+$main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_image_size', 'main_image' );
+
+
 ?>
+<!---->
+<style>
+	.rt-image img {
+		transform: none !important;
+	}
+	.ps-card-2 {
+		text-align: center;
+	}
+</style>
 
-
-
-<div class="col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
-	<div class="blog-box show-image no-preview">
-		<div class="blog-img-holder">
-			<div class="blog-img normal">
-				<?php echo wp_kses_post( $main_image ); ?>
-			</div>
+<div class="col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+	<div class="ps-card-2 rt-item rt-single-item">
+		<div class="rt-image">
+			<?php echo wp_kses_post( $main_image ); ?>
 		</div>
 		<div class="entry-content">
-			<?php if ( ! empty( $data['rt_label'] ) ) { ?>
-				<h4><?php echo esc_html( $data['rt_label'] ); ?></h4>
-			<?php } ?>
-			<?php if ( ! empty( $data['rt_title'] ) ) { ?>
-				<h1><?php echo esc_html( $data['rt_title'] ); ?></h1>
-			<?php } ?>
-			<?php if ( ! empty( $data['rt_p_content'] ) ) { ?>   
-				<p><?php echo $data['rt_p_content']; ?></p>
-			<?php } ?>
+			<h4><?php echo esc_html( $data['ps_label'] ); ?></h4>
+			<h1><?php echo esc_html( $data['ps_title'] ); ?></h1>
+			<div class="post_excerpt">
+				<p class="ps-body-copy-2"><?php echo esc_html( $data['ps_p_content'] ); ?></p>
+			</div>
 			<?php if ( ! empty( $data['button_url'] ) ) { ?>
 				<div class="cta">
 					<?php echo wp_kses_post( $cta ); ?>
@@ -62,5 +64,3 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 		</div>
 	</div>
 </div>
-
-

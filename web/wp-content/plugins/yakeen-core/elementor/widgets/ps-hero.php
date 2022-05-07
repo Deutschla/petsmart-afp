@@ -17,11 +17,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class PS_Image extends Custom_Widget_Base {
+class PS_Hero extends Custom_Widget_Base {
 
 	public function __construct( $data = [], $args = null ) {
-		$this->rt_name = esc_html__( 'PS Image', 'yakeen-core' );
-		$this->rt_base = 'ps-image';
+		$this->rt_name = esc_html__( 'PS Hero', 'yakeen-core' );
+		$this->rt_base = 'ps-hero';
 		parent::__construct( $data, $args );
 	}
 	private function rt_tween_load_scripts() {

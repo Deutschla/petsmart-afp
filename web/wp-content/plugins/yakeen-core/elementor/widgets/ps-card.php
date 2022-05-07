@@ -17,11 +17,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class PS_Image extends Custom_Widget_Base {
+class PS_Card extends Custom_Widget_Base {
 
 	public function __construct( $data = [], $args = null ) {
-		$this->rt_name = esc_html__( 'PS Image', 'yakeen-core' );
-		$this->rt_base = 'ps-image';
+		$this->rt_name = esc_html__( 'PS Card', 'yakeen-core' );
+		$this->rt_base = 'ps-card';
 		parent::__construct( $data, $args );
 	}
 	private function rt_tween_load_scripts() {
@@ -34,6 +34,16 @@ class PS_Image extends Custom_Widget_Base {
 				'mode'  => 'section_start',
 				'id'    => 'sec_general',
 				'label' => esc_html__( 'General', 'yakeen-core' ),
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'card_style',
+				'label'   => esc_html__( 'Card Style', 'yakeen-core' ),
+				'options' => array(
+					'ps-card-1' => esc_html__( 'Card 1', 'yakeen-core' ),
+					'ps-card-2' => esc_html__( 'Card 2', 'yakeen-core' ),
+				),
+				'default' => 'ps-card-1',
 			),
 			/*image default*/
 			array(
@@ -54,19 +64,19 @@ class PS_Image extends Custom_Widget_Base {
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,
-				'id'      => 'rt_label',
+				'id'      => 'ps_label',
 				'label'   => esc_html__( 'Label', 'yakeen-core' ),
 				'default' => esc_html__( 'Lorem ipsum dolor sit amet', 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,
-				'id'      => 'rt_title',
+				'id'      => 'ps_title',
 				'label'   => esc_html__( 'Title', 'yakeen-core' ),
 				'default' => esc_html__( 'Lorem ipsum dolor sit amet', 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::TEXTAREA,
-				'id'      => 'rt_p_content',
+				'id'      => 'ps_p_content',
 				'label'   => esc_html__( 'Paragraph Content', 'yakeen-core' ),
 				'default' => esc_html__( 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet', 'yakeen-core' ),
 			),
@@ -82,7 +92,7 @@ class PS_Image extends Custom_Widget_Base {
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,
-				'id'      => 'rt_cta_label',
+				'id'      => 'ps_cta_label',
 				'label'   => esc_html__( 'CTA Label', 'yakeen-core' ),
 				'default' => esc_html__( 'Learn more', 'yakeen-core' ),
 			),
@@ -103,12 +113,12 @@ class PS_Image extends Custom_Widget_Base {
 	protected function render() {
 		$data = $this->get_settings();
 
-		switch ( $data['style'] ) {
-			case 'style2':
-				$template = 'rt-image-2';
+		switch ( $data['card_style'] ) {
+			case 'ps-card-2':
+				$template = 'ps-card-2';
 				break;
 			default:
-				$template = 'ps-image-1';
+				$template = 'ps-card-1';
 				break;
 		}
 
