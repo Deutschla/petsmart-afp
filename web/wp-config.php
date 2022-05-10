@@ -31,7 +31,7 @@ if ( ! isset( $_ENV['PANTHEON_ENVIRONMENT'] ) && file_exists( $rootPath . '/.env
  * Disallow on server file edits
  */
 define( 'DISALLOW_FILE_EDIT', true );
-define( 'DISALLOW_FILE_MODS', true );
+define( 'DISALLOW_FILE_MODS', false );
 
 /**
  * Force SSL

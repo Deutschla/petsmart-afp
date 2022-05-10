@@ -1,0 +1,113 @@
+/*Petsmart Global Styles*/
+/*Mobile first breakpoints*/
+body {
+	font-family: "Euclid Circular B", serif;
+	font-weight: normal;
+}
+
+/*-------------------------------------
+#. Color references
+#DD2834 Loving Red
+#FFFFFF White
+#B6DCE$ Joyful Blue
+#206EF6 Zoomies Blue
+---------------------------------------*/
+
+/*-------------------------------------
+#. Headings
+---------------------------------------*/
+h1, .ps-headline-1 {
+	font-weight: bold;
+	line-height: 44px;
+	font-size: 35px;
+}
+
+h2, .ps-headline-2 {
+	font-weight: bold;
+	line-height: 44px;
+	font-size: 30px;
+}
+
+label, .ps-label {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 24px;
+	color: #206EF6;
+}
+
+/*Desktop Large*/
+@media (min-width: 1200px) {
+	h1, .ps-headline-1 {
+		line-height: 44px;
+		font-size: 35px;
+	}
+
+	h2, .ps-headline-2 {
+		line-height: 44px;
+		font-size: 30px;
+	}
+}
+
+
+/*-------------------------------------
+#. Body
+---------------------------------------*/
+p, .ps-body-copy-1 {
+	font-weight: normal;
+	size: 24px;
+	line-height: 33px;
+}
+
+.ps-body-copy-2 {
+	font-size: 17px;
+	line-height: 24px;
+}
+
+/*-------------------------------------
+#. Buttons
+---------------------------------------*/
+.ps-cta-1 {
+	font-family: "Euclid Circular B", serif;
+	background-color: #DD2834;
+	border: 2px solid #DD2834;
+	color: #ffffff;
+	align-items: center;
+	padding: 9px 28px;
+	border-radius: 100px;
+	display: inline-flex;
+	font-weight: bold;
+}
+.ps-cta-1:hover {
+	background-color: #FFFFFF;
+	color: #DD2834;
+}
+
+.ps-cta-2 {
+	font-size: 20px;
+	color: #206EF6;
+	font-weight: bold;
+}
+
+.ps-cta-2:hover {
+	color: #206EF6;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+
+/*-------------------------------------
+#. Breakpoints references 
+---------------------------------------*/
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+
+}
