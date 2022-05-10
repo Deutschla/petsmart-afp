@@ -108,7 +108,7 @@ class PS_Hero extends Custom_Widget_Base {
 				$template = 'rt-image-2';
 				break;
 			default:
-				$template = 'ps-image-1';
+				$template = 'ps-hero-1';
 				break;
 		}
 
