@@ -98,10 +98,6 @@ class YakeenTheme_Footer_Settings extends YakeenTheme_Customizer {
                         'image' => trailingslashit( get_template_directory_uri() ) . 'assets/img/footer-4.jpg',
                         'name' => __( 'Layout 4', 'yakeen' )
                     ),
-                    'ps' => array(
-                        'image' => trailingslashit( get_template_directory_uri() ) . 'assets/img/footer-4.jpg',
-                        'name' => __( 'Layout ps', 'yakeen' )
-                    ),
                 )
             )
         ) );

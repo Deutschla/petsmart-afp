@@ -18,8 +18,8 @@ body {
 ---------------------------------------*/
 h1, .ps-headline-1 {
 	font-weight: bold;
-	line-height: 36px;
-	font-size: 33px;
+	line-height: 44px;
+	font-size: 35px;
 }
 
 h2, .ps-headline-2 {
@@ -32,6 +32,7 @@ label, .ps-label {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 24px;
+	color: #206EF6;
 }
 
 /*Desktop Large*/

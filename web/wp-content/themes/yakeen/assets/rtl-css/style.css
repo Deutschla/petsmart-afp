@@ -469,12 +469,13 @@ a.button-style-1:hover svg {
 /*button style 2*/
 .button-style-2 {
     position: relative;
-    background-color: #DD2834;
+    background-color: #f07654;
     color: #ffffff;
     font-size: 14px;
+    text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1.6px;
-    border-radius: 25px;
+    border-radius: 4px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -487,7 +488,6 @@ a.button-style-1:hover svg {
 
 a.button-style-2:hover {
     color: #ffffff;
-    background-color: white;
 }
 
 .button-style-2:before {
@@ -508,7 +508,7 @@ a.button-style-2:hover {
 .button-style-2:hover:before {
     transform: scaleX(1);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    background-color: #DD2834;
+    background-color: #f07654;
 }
 
 .button-style-2.btn-common path.rt-button-cap {

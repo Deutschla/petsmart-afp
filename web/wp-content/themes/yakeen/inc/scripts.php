@@ -95,8 +95,6 @@ if ( !function_exists( 'yakeen_enqueue_scripts' ) ) {
 		// Style CSS
 		wp_enqueue_style( 'yakeen-style',     	yakeen_get_maybe_rtl('style.css'), array(), YAKEEN_VERSION );
 		
-		wp_enqueue_style( 'yakeen-style',     	yakeen_get_maybe_rtl('petsmart.css'), array(), YAKEEN_VERSION );
-		
 		// Template Style
 		wp_add_inline_style( 'yakeen-style',   	yakeen_template_style() );
 
