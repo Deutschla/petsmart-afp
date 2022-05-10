@@ -35,9 +35,18 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 	$main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_image_size', 'main_image' );
 ?>
 
+<style>
+	.ps-hero {
+		background-color: white !important;
+	}
+	.ps-hero .entry-content p {
+		color: black;
+		line-height: 1.5;
+	}
+</style>
 
 
-<div class="col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
+<div class="ps-hero col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
 	<div class="blog-box show-image no-preview">
 		<div class="blog-img-holder">
 			<div class="blog-img normal">
