@@ -56,19 +56,19 @@ class PS_Hero extends Custom_Widget_Base {
 				'type'    => Controls_Manager::TEXT,
 				'id'      => 'rt_label',
 				'label'   => esc_html__( 'Label', 'yakeen-core' ),
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet', 'yakeen-core' ),
+				'default' => esc_html__( 'Drop Date: Monday, Dec. 2, 2021', 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,
 				'id'      => 'rt_title',
 				'label'   => esc_html__( 'Title', 'yakeen-core' ),
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet', 'yakeen-core' ),
+				'default' => esc_html__( 'Pawliday Sweaters made pet parents smile last holiday season', 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::TEXTAREA,
 				'id'      => 'rt_p_content',
 				'label'   => esc_html__( 'Paragraph Content', 'yakeen-core' ),
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet', 'yakeen-core' ),
+				'default' => esc_html__( 'The limited-edition drop helped pet parents get even closer to their besties during the holidays. That’s what Anything for Pets is all about.', 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::SELECT2,
@@ -108,7 +108,7 @@ class PS_Hero extends Custom_Widget_Base {
 				$template = 'rt-image-2';
 				break;
 			default:
-				$template = 'ps-image-1';
+				$template = 'ps-hero-1';
 				break;
 		}
 
