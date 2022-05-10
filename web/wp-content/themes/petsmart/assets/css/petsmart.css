@@ -94,6 +94,17 @@ p, .ps-body-copy-1 {
 	font-weight: bold;
 }
 
+/* disable zoom on widgets */
+
+
+/* hero widget */
+.ps-hero {
+	background-color: white !important;
+}
+.ps-hero .entry-content p {
+	color: black;
+	line-height: 1.5;
+}
 
 
 /*-------------------------------------
