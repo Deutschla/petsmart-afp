@@ -29,18 +29,18 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 
 ?>
 <!---->
-<style>
-	.rt-image img {
-		transform: none !important;
-	}
-   .rt-image__tout img {
-		width: 454px !important;
-		height: 454px !important;
-	}
-	.rt-image__tout {
-		text-align: center;
-	}
-</style>
+<!--<style>-->
+<!--	.rt-image img {-->
+<!--		transform: none !important;-->
+<!--	}-->
+<!--   .rt-image__tout img {-->
+<!--		width: 454px !important;-->
+<!--		height: 454px !important;-->
+<!--	}-->
+<!--	.rt-image__tout {-->
+<!--		text-align: center;-->
+<!--	}-->
+<!--</style>-->
 
 <div class="hide wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s">
 	<div class="rt-item rt-single-item">

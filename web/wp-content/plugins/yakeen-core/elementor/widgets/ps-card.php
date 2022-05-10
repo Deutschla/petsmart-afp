@@ -42,6 +42,7 @@ class PS_Card extends Custom_Widget_Base {
 				'options' => array(
 					'ps-card-1' => esc_html__( 'Card 1', 'yakeen-core' ),
 					'ps-card-2' => esc_html__( 'Card 2', 'yakeen-core' ),
+					'ps-card-3' => esc_html__( 'Card 3 (Tout)', 'yakeen-core' ),
 				),
 				'default' => 'ps-card-1',
 			),
@@ -81,6 +82,15 @@ class PS_Card extends Custom_Widget_Base {
 				'default' => esc_html__( 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet', 'yakeen-core' ),
 			),
 			array(
+				'type'      => Controls_Manager::SWITCHER,
+				'id'        => 'content_display',
+				'label'     => esc_html__( 'Reverse', 'yakeen-core' ),
+				'label_on'  => esc_html__( 'Yes', 'yakeen-core' ),
+				'label_off' => esc_html__( 'No', 'yakeen-core' ),
+				'default'   => 'no',
+				'condition' => array( 'card_style' => array( 'ps-card-3' ) ),
+			),
+			array(
 				'type'    => Controls_Manager::SELECT2,
 				'id'      => 'cta_style',
 				'label'   => esc_html__( 'CTA Style', 'yakeen-core' ),
@@ -114,6 +124,9 @@ class PS_Card extends Custom_Widget_Base {
 		$data = $this->get_settings();
 
 		switch ( $data['card_style'] ) {
+			case 'ps-card-3':
+				$template = 'ps-card-3';
+				break;
 			case 'ps-card-2':
 				$template = 'ps-card-2';
 				break;
