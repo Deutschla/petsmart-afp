@@ -54,21 +54,27 @@ class PS_Image extends Custom_Widget_Base {
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,
+				'id'      => 'rt_header',
+				'label'   => esc_html__( 'Header', 'yakeen-core' ),
+				'default' => esc_html__( 'Our anthem', 'yakeen-core' ),
+			),
+			array(
+				'type'    => Controls_Manager::TEXT,
 				'id'      => 'rt_label',
 				'label'   => esc_html__( 'Label', 'yakeen-core' ),
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet', 'yakeen-core' ),
+				'default' => esc_html__( 'Coming Monday, Jun. 9, 2022', 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,
 				'id'      => 'rt_title',
 				'label'   => esc_html__( 'Title', 'yakeen-core' ),
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet', 'yakeen-core' ),
+				'default' => esc_html__( "Free, limited-edition Father's Day Poop Bag Cards", 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::TEXTAREA,
 				'id'      => 'rt_p_content',
 				'label'   => esc_html__( 'Paragraph Content', 'yakeen-core' ),
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet', 'yakeen-core' ),
+				'default' => esc_html__( '', 'yakeen-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::SELECT2,

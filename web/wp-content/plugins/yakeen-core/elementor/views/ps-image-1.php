@@ -35,10 +35,57 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 	$main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_image_size', 'main_image' );
 ?>
 
+<style>
+	.ps-featured-content-bg-color-overlay {
+		background: #B6DCE4;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.ps-featured-content {
+		background-color: #B6DCE4 !important;
+	}
+	.ps-featured-content .featured-content-header h2 {
+		color: #DD2834;
+		margin: 25px auto;
+	}
+	.ps-featured-content h4 {
+		margin-bottom: 16px;
+	}
+	.ps-featured-content .cta {
+		margin-bottom: 20px;
+	}
 
+	@media (max-width: 767px) {
+		.ps-featured-content {
+			background-color: white !important;
+		}
+		.ps-featured-content .blog-img {
 
-<div class="col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
+		}
+		.ps-featured-content .blog-img > img {
+			height: 100%
+		}
+		.ps-featured-content .entry-content {
+			padding: 30px 10px 30px !important;
+		}
+		.ps-featured-content .entry-content h2 {
+			line-height: 1.2;
+		}
+		.ps-featured-content .cta {
+			margin-bottom: 16px;
+		}
+	}
+</style>
+
+<div class="ps-featured-content-bg-color-overlay"></div>
+<div class="ps-featured-content col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
 	<div class="blog-box show-image no-preview">
+		<div class="featured-content-header">
+			<?php if ( ! empty( $data['rt_header'] ) ) { ?>
+				<h2><?php echo esc_html( $data['rt_header'] ); ?></h2>
+			<?php } ?>
+		</div>
 		<div class="blog-img-holder">
 			<div class="blog-img normal">
 				<?php echo wp_kses_post( $main_image ); ?>
@@ -49,7 +96,7 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 				<h4><?php echo esc_html( $data['rt_label'] ); ?></h4>
 			<?php } ?>
 			<?php if ( ! empty( $data['rt_title'] ) ) { ?>
-				<h1><?php echo esc_html( $data['rt_title'] ); ?></h1>
+				<h2><?php echo esc_html( $data['rt_title'] ); ?></h2>
 			<?php } ?>
 			<?php if ( ! empty( $data['rt_p_content'] ) ) { ?>   
 				<p><?php echo $data['rt_p_content']; ?></p>
