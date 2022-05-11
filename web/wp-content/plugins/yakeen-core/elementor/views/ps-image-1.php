@@ -47,6 +47,11 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 	.ps-featured-content h4 {
 		margin-bottom: 16px;
 	}
+	.ps-featured-content .entry-content p {
+		color: black;
+		line-height: 1.5;
+		font-size: 17px;
+	}
 	.ps-featured-content .cta {
 		margin-bottom: 20px;
 	}
@@ -63,6 +68,9 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 		}
 		.ps-featured-content .entry-content h2 {
 			line-height: 1.2;
+		}
+		.ps-featured-content .entry-content p {
+			margin: 0;
 		}
 		.ps-featured-content .cta {
 			margin-bottom: 16px;
