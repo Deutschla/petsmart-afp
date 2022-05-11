@@ -42,6 +42,26 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 	.ps-hero .entry-content p {
 		color: black;
 		line-height: 1.5;
+		font-size: 17px;
+	}
+
+	@media (max-width: 767px) {
+		.ps-hero .blog-img {
+			height: 210px;
+		}
+		.ps-hero .blog-img > img {
+			height: 100%
+		}
+		.ps-hero .entry-content {
+			padding: 30px 10px 30px !important;
+		}
+		.ps-hero .entry-content h1 {
+			font-size: 30px;
+			line-height: 1.3;
+		}
+		.ps-hero .entry-content p {
+			margin: 0;
+		}
 	}
 </style>
 

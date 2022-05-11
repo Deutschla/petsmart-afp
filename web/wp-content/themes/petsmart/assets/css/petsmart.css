@@ -95,7 +95,13 @@ p, .ps-body-copy-1 {
 }
 
 /* disable zoom on widgets */
-
+img {
+	filter: none !important;
+	transform: none !important;
+}
+.entry-content {
+	transform: none !important;
+}
 
 
 /*-------------------------------------
