@@ -132,7 +132,7 @@ img {
 		line-height: 26px;
 	}
 
-	div[data-col='25'] {
+	div[data-col='25'], .elementor-column.elementor-col-25 {
 		flex-basis: 50%
 	}
 }

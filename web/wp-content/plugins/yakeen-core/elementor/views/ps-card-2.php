@@ -37,15 +37,24 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_
 ?>
 <!---->
 <style>
+	div[data-widget_type='ps-card.default'] {
+    	height: 100%
+	}
 	.rt-image img {
 		transform: none !important;
 	}
 	.ps-card-2 {
 		text-align: center;
 	}
+	/*.ps-4-up-card .cta{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}*/
 </style>
 
-<div class="col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+<div class="ps-4-up-card col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
 	<div class="ps-card-2 rt-item rt-single-item">
 		<div class="rt-image">
 			<?php echo wp_kses_post( $main_image ); ?>
