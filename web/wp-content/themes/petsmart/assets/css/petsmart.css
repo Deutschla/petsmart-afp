@@ -52,13 +52,15 @@ label, .ps-label {
 /*-------------------------------------
 #. Body
 ---------------------------------------*/
-p, .ps-body-copy-1 {
+.ps-body-copy-1 {
 	font-weight: normal;
-	size: 24px;
+	font-size: 24px;
 	line-height: 33px;
 }
 
-.ps-body-copy-2 {
+p, .ps-body-copy-2 {
+	color: black;
+	font-weight: normal;
 	font-size: 17px;
 	line-height: 24px;
 }
@@ -76,6 +78,7 @@ p, .ps-body-copy-1 {
 	border-radius: 100px;
 	display: inline-flex;
 	font-weight: bold;
+	font-size: 17px;
 }
 .ps-cta-1:hover {
 	background-color: #FFFFFF;
@@ -86,11 +89,11 @@ p, .ps-body-copy-1 {
 	font-size: 20px;
 	color: #206EF6;
 	font-weight: bold;
+	text-decoration: underline !important;
 }
 
 .ps-cta-2:hover {
 	color: #206EF6;
-	text-decoration: underline;
 	font-weight: bold;
 }
 
@@ -117,5 +120,19 @@ img {
 
 }
 @media (max-width: 767px) {
+	h1, .ps-headline-1 {
+		font-weight: bold;
+		line-height: 36px;
+		font-size: 33px;
+	}
 
+	.ps-body-copy-1 {
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	div[data-col='25'] {
+		flex-basis: 50%
+	}
 }
