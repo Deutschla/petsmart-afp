@@ -36,14 +36,9 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 ?>
 
 <style>
-	.ps-featured-content-bg-color-overlay {
-		background: #B6DCE4;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
 	.ps-featured-content {
-		background-color: #B6DCE4 !important;
+		background-color: white;
+		background-color: #B6DCE4;
 	}
 	.ps-featured-content .featured-content-header h2 {
 		color: #DD2834;
@@ -57,9 +52,6 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 	}
 
 	@media (max-width: 767px) {
-		.ps-featured-content {
-			background-color: white !important;
-		}
 		.ps-featured-content .blog-img {
 
 		}
@@ -78,7 +70,6 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 	}
 </style>
 
-<div class="ps-featured-content-bg-color-overlay"></div>
 <div class="ps-featured-content col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
 	<div class="blog-box show-image no-preview">
 		<div class="featured-content-header">
