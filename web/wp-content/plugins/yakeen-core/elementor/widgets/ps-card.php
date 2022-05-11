@@ -138,3 +138,5 @@ class PS_Card extends Custom_Widget_Base {
 		return $this->rt_template( $template, $data );
 	}
 }
+
+
