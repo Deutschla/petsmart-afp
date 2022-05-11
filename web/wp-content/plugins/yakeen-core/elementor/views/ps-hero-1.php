@@ -55,8 +55,7 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 		.ps-hero .entry-content {
 			padding: 30px 10px 30px !important;
 		}
-		.ps-hero .entry-content h1 {
-			font-size: 30px;
+		.ps-hero .entry-content h2 {
 			line-height: 1.3;
 		}
 		.ps-hero .entry-content p {
@@ -78,7 +77,7 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 				<h4><?php echo esc_html( $data['rt_label'] ); ?></h4>
 			<?php } ?>
 			<?php if ( ! empty( $data['rt_title'] ) ) { ?>
-				<h1><?php echo esc_html( $data['rt_title'] ); ?></h1>
+				<h2><?php echo esc_html( $data['rt_title'] ); ?></h2>
 			<?php } ?>
 			<?php if ( ! empty( $data['rt_p_content'] ) ) { ?>   
 				<p><?php echo $data['rt_p_content']; ?></p>
