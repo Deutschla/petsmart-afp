@@ -36,10 +36,11 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 ?>
 
 <style>
+	.ps-hero .ps-label {
+		margin-bottom: 18px;
+	}
+	
 	@media (max-width: 767px) {
-		.ps-hero .ps-label {
-			margin-bottom: 18px;
-		}
 		.ps-hero .entry-content {
 			padding: 30px 10px 30px !important;
 		}

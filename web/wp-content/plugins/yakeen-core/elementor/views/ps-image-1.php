@@ -40,6 +40,9 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 		color: #DD2834;
 		margin: 25px auto;
 	}
+	.ps-featured-content .ps-label {
+		margin-bottom: 18px;
+	}
 	.ps-featured-content .cta {
 		margin-bottom: 20px;
 	}
