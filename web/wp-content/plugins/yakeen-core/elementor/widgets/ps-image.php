@@ -54,12 +54,6 @@ class PS_Image extends Custom_Widget_Base {
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,
-				'id'      => 'rt_header',
-				'label'   => esc_html__( 'Header', 'yakeen-core' ),
-				'default' => esc_html__( 'Our anthem', 'yakeen-core' ),
-			),
-			array(
-				'type'    => Controls_Manager::TEXT,
 				'id'      => 'rt_label',
 				'label'   => esc_html__( 'Label', 'yakeen-core' ),
 				'default' => esc_html__( 'Coming Monday, Jun. 9, 2022', 'yakeen-core' ),
