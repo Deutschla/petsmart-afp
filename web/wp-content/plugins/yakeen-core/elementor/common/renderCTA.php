@@ -38,11 +38,11 @@ function renderCTA(array $data, string $label_source = 'ps_cta_label', string $c
 
         $attr .= 'href="' . $data['button_url']['url'] . '"';
 
-        $attr .= !empty($data['cta_style']) or !empty($custom_class) 
-            ? ' class="' . ($data['cta_style'] ?? '') . ($custom_class ? ' ' . $custom_class : '') . $video_class . '"' 
+        $attr .= !empty($data['cta_style']) || !empty($custom_class)
+            ? ' class="' . ($data['cta_style'] ?? '') . ($custom_class ? ' ' . $custom_class : '') . $video_class . '"'
             : '';
 
-        $attr .= !empty($data['button_url']['is_external']) 
+        $attr .= !empty($data['button_url']['is_external'])
             ? ' target="_blank"' : '';
 
         $attr .= !empty($data['button_url']['nofollow']) ? ' rel="nofollow"' : '';
@@ -52,4 +52,3 @@ function renderCTA(array $data, string $label_source = 'ps_cta_label', string $c
     }
     return '';
 }
-
