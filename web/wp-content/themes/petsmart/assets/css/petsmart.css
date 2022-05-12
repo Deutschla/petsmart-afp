@@ -24,14 +24,20 @@ h1, .ps-headline-1 {
 
 h2, .ps-headline-2 {
 	font-weight: bold;
-	line-height: 44px;
+	line-height: 36px;
 	font-size: 30px;
+}
+
+h3, .ps-headline-3 {
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 24px;
 }
 
 label, .ps-label {
 	font-weight: bold;
 	font-size: 17px;
-	line-height: 24px;
+	line-height: 26px;
 	color: #206EF6;
 }
 
@@ -76,12 +82,13 @@ label, .ps-label {
 	font-size: 20px;
 	color: #206EF6;
 	font-weight: bold;
+	text-decoration: underline !important;
 }
 
 .ps-cta-2:hover {
 	color: #206EF6;
 	font-weight: bold;
-	text-decoration: underline;
+	opacity: 70%;
 }
 
 /* disable zoom on widgets */
@@ -101,7 +108,11 @@ img {
 	}
 
 	h2, .ps-headline-2 {
-		line-height: 44px;
+		line-height: 40px;
+	}
+
+	h3, .ps-headline-3 {
+		line-height: 40px;
 		font-size: 30px;
 	}
 
