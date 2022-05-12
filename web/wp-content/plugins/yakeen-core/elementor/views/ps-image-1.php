@@ -38,7 +38,6 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 <style>
 	.ps-featured-content {
 		background-color: white;
-		background-color: #B6DCE4;
 	}
 	.ps-featured-content .featured-content-header h2 {
 		color: #DD2834;

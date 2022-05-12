@@ -40,13 +40,34 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_
 	div[data-widget_type='ps-card.default'] {
     	height: 100%
 	}
+
+	/* making whole card a link */
+	.ps-4-up-card {
+		cursor: pointer;
+	}
+	.ps-4-up-card .ps-4-up-cardlink {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+	}
+	.ps-4-up-card .ps-4-up-cardlink > a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		color: transparent;
+		transition: none;
+	}
+
 	.rt-image img {
 		transform: none !important;
 	}
 	.ps-card-2 {
 		text-align: center;
 	}
-	/*.ps-4-up-card .cta{
+
+	/* alignment of links (to be added):
+	.ps-4-up-card .cta{
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -55,6 +76,9 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_
 </style>
 
 <div class="ps-4-up-card col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+	<div class="ps-4-up-cardlink">
+		<?php echo wp_kses_post( $cta ); ?>
+	</div>	
 	<div class="ps-card-2 rt-item rt-single-item">
 		<div class="rt-image">
 			<?php echo wp_kses_post( $main_image ); ?>
