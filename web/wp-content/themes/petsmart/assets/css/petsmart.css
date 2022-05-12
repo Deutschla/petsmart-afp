@@ -18,8 +18,8 @@ body {
 ---------------------------------------*/
 h1, .ps-headline-1 {
 	font-weight: bold;
-	line-height: 44px;
-	font-size: 35px;
+	line-height: 36px;
+	font-size: 33px;
 }
 
 h2, .ps-headline-2 {
@@ -54,11 +54,11 @@ label, .ps-label {
 ---------------------------------------*/
 .ps-body-copy-1 {
 	font-weight: normal;
-	font-size: 24px;
-	line-height: 33px;
+	font-size: 20px;
+	line-height: 26px;
 }
 
-p, .ps-body-copy-2 {
+.ps-body-copy-2 {
 	color: black;
 	font-weight: normal;
 	font-size: 17px;
@@ -89,12 +89,12 @@ p, .ps-body-copy-2 {
 	font-size: 20px;
 	color: #206EF6;
 	font-weight: bold;
-	text-decoration: underline !important;
 }
 
 .ps-cta-2:hover {
 	color: #206EF6;
 	font-weight: bold;
+	text-decoration: underline;
 }
 
 /* disable zoom on widgets */
@@ -120,19 +120,5 @@ img {
 
 }
 @media (max-width: 767px) {
-	h1, .ps-headline-1 {
-		font-weight: bold;
-		line-height: 36px;
-		font-size: 33px;
-	}
 
-	.ps-body-copy-1 {
-		font-weight: normal;
-		font-size: 20px;
-		line-height: 26px;
-	}
-
-	div[data-col='25'], .elementor-column.elementor-col-25 {
-		flex-basis: 50%
-	}
 }
