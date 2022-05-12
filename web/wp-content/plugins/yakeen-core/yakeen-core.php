@@ -54,6 +54,7 @@ class Yakeen_Core {
 
 		require_once 'widget/widget-settings.php';
 		require_once 'lib/optimization/__init__.php';
+		require_once('elementor/common/renderCTA.php');
 	}
 
 	/**
