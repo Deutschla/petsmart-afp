@@ -59,11 +59,6 @@ if ( ! empty( $data['button_url']['url'] ) ) {
 
 <div class="ps-featured-content col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
 	<div class="blog-box show-image no-preview">
-		<div class="featured-content-header">
-			<?php if ( ! empty( $data['rt_header'] ) ) { ?>
-				<h2 class="ps-headline-2"><?php echo esc_html( $data['rt_header'] ); ?></h2>
-			<?php } ?>
-		</div>
 		<div class="blog-img-holder">
 			<div class="blog-img normal">
 				<?php echo wp_kses_post( $main_image ); ?>
