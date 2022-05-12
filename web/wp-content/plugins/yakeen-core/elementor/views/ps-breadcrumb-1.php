@@ -11,21 +11,10 @@ use YakeenTheme_Helper;
 
 use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
-extract( $data );
 
-$attr = '';
-$cta  = '';
-if ( ! empty( $data['button_url']['url'] ) ) {
-	$attr  = 'href="' . $data['button_url']['url'] . '"';
-	$attr .= ! empty( $data['button_url']['is_external'] ) ? ' target="_blank"' : '';
-	$attr .= ! empty( $data['button_url']['nofollow'] ) ? ' rel="nofollow"' : '';
+$cta = \radiustheme\Yakeen_Core\elementor\commom\renderCTA($data, 'rt_cta_label', 'button-style-2');
 
-	$cta = '<a class="button-style-2" ' . $attr . '>' . esc_html( $data['rt_cta_label'] ) . '</a>';
-
-}
-
-	$rt_logo = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_image_size', 'rt_logo' );
-
+$rt_logo = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_image_size', 'rt_logo');
 
 ?>
 
