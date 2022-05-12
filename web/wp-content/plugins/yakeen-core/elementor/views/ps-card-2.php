@@ -45,7 +45,7 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_
 	}
 </style>
 
-<div class="ps-4-up-card col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+<div class="col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
 	<a href="<?php echo esc_html( $data['button_url']['url'] ) ?>" target="_blank">
 		<div class="ps-card-2 rt-item rt-single-item">
 			<div class="rt-image">
