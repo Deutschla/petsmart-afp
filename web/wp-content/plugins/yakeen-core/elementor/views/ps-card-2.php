@@ -45,9 +45,9 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_
 	}
 </style>
 
-<div class="col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+<div class="ps-card-2 col-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
 	<a href="<?php echo esc_html( $data['button_url']['url'] ) ?>" target="_blank">
-		<div class="ps-card-2 rt-item rt-single-item">
+		<div class="rt-item rt-single-item">
 			<div class="rt-image">
 				<?php echo wp_kses_post( $main_image ); ?>
 			</div>
