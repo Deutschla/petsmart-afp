@@ -11,28 +11,10 @@ use YakeenTheme_Helper;
 
 use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
-extract( $data );
 
-if ( ! empty( $data['button_url']['url'] ) ) {
-	$attr        = '';
-	$cta         = '';
-	$video_class = '';
-	$is_video    = strpos( $data['button_url']['url'], 'youtube' );
+$cta = \radiustheme\Yakeen_Core\elementor\commom\renderCTA($data);
 
-	if ( false !== $is_video ) {
-		$video_class = ' rt-play rt-video-popup';
-	}
-
-	$attr  = 'href="' . $data['button_url']['url'] . '"';
-	$attr .= ! empty( $data['cta_style'] ) ? ' class="' . $data['cta_style'] . $video_class . '"' : '';
-	$attr .= ! empty( $data['button_url']['is_external'] ) ? ' target="_blank"' : '';
-	$attr .= ! empty( $data['button_url']['nofollow'] ) ? ' rel="nofollow"' : '';
-
-	$cta = '<a ' . $attr . '>' . esc_html( $data['ps_cta_label'] ) . '</a>';
-}
-
-$main_image = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_image_size', 'main_image' );
-
+$main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_image_size', 'main_image');
 
 ?>
 <!---->
