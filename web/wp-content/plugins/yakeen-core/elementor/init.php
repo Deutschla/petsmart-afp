@@ -59,6 +59,7 @@ class Custom_Widget_Init {
 			'ps-breadcrumb'      					=> 'PS_Breadcrumb',
 			'ps-image'      					=> 'PS_Image',
             'ps-hero'      					=> 'PS_Hero',
+            'ps-button'      					=> 'PS_Button',
             'ps-card'      					=> 'PS_Card',
 			'ps-tout'      					=> 'PS_Tout',
 			'ps-tout-grid'      					=> 'PS_Tout_Grid',

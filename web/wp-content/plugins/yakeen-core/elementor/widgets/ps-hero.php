@@ -35,6 +35,17 @@ class PS_Hero extends Custom_Widget_Base {
 				'id'    => 'sec_general',
 				'label' => esc_html__( 'General', 'yakeen-core' ),
 			),
+
+            array(
+                'type'    => Controls_Manager::SELECT2,
+                'id'      => 'hero_style',
+                'label'   => esc_html__( 'Hero Style', 'yakeen-core' ),
+                'options' => array(
+                    'ps-hero-1' => esc_html__( 'Hero 1', 'yakeen-core' ),
+                    'ps-hero-2' => esc_html__( 'Hero 2', 'yakeen-core' ),
+                ),
+                'default' => 'ps-hero-1',
+            ),
 			/*image default*/
 			array(
 				'type'        => Controls_Manager::MEDIA,
@@ -103,9 +114,9 @@ class PS_Hero extends Custom_Widget_Base {
 	protected function render() {
 		$data = $this->get_settings();
 
-		switch ( $data['style'] ) {
-			case 'style2':
-				$template = 'rt-image-2';
+		switch ( $data['hero_style'] ) {
+			case 'ps-hero-2':
+				$template = 'ps-hero-2';
 				break;
 			default:
 				$template = 'ps-hero-1';
