@@ -34,7 +34,7 @@ h3, .ps-headline-3 {
 	font-size: 24px;
 }
 
-label, .ps-label {
+h4, label, .ps-label {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 26px;
@@ -44,14 +44,14 @@ label, .ps-label {
 /*-------------------------------------
 #. Body
 ---------------------------------------*/
-.ps-body-copy-1 {
+h5, .ps-body-copy-1 {
 	color: black;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 26px;
+	line-height: 26px !important;
 }
 
-.ps-body-copy-2 {
+h6, p, .ps-body-copy-2 {
 	color: black;
 	font-weight: normal;
 	font-size: 17px;
@@ -116,9 +116,9 @@ img {
 		font-size: 30px;
 	}
 
-	.ps-body-copy-1 {
+	h5, .ps-body-copy-1 {
 		font-size: 24px;
-		line-height: 33px;
+		line-height: 33px !important;
 	}
 }
 

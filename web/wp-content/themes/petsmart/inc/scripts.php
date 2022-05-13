@@ -73,7 +73,7 @@ if ( !function_exists( 'yakeen_enqueue_scripts' ) ) {
 		$dep = array( 'jquery' );
 		/*CSS*/
 		// Google fonts
-		wp_enqueue_style( 'yakeen-gfonts', 	YakeenTheme_Helper::fonts_url(), array(), YAKEEN_VERSION );
+		#wp_enqueue_style( 'yakeen-gfonts', 	YakeenTheme_Helper::fonts_url(), array(), YAKEEN_VERSION );
 		// Bootstrap CSS  //@rtl
 		wp_enqueue_style( 'bootstrap', 			yakeen_get_maybe_rtl('bootstrap.min.css'), array(), YAKEEN_VERSION );
 		

@@ -22,9 +22,6 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 	.ps-hero .ps-label {
 		margin-bottom: 18px;
 	}
-    .ps-hero img {
-        width: 100%;
-    }
 	
 	@media (max-width: 767px) {
 		.ps-hero .entry-content {
@@ -37,7 +34,7 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 </style>
 
 
-<div class="ps-hero col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
+<div class="ps-hero-2 col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
 	<div class="blog-box show-image no-preview">
 		<div class="blog-img-holder">
 			<div class="blog-img normal">
@@ -45,14 +42,15 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 			</div>
 		</div>
 		<div class="entry-content">
+            <h2>2</h2>
 			<?php if ( ! empty( $data['rt_label'] ) ) { ?>
 				<label class="ps-label"><?php echo esc_html( $data['rt_label'] ); ?></label>
 			<?php } ?>
 			<?php if ( ! empty( $data['rt_title'] ) ) { ?>
-				<h1 class="ps-headline-1"><?php echo esc_html( $data['rt_title'] ); ?></h1>
+				<h2 class="ps-headline-2"><?php echo esc_html( $data['rt_title'] ); ?></h2>
 			<?php } ?>
 			<?php if ( ! empty( $data['rt_p_content'] ) ) { ?>   
-				<p class="ps-body-copy-1"><?php echo $data['rt_p_content']; ?></p>
+				<p class="ps-body-copy-2"><?php echo $data['rt_p_content']; ?></p>
 			<?php } ?>
 			<?php if ( ! empty( $data['button_url'] ) ) { ?>
 				<div class="cta">
