@@ -22,6 +22,9 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 	.ps-hero .ps-label {
 		margin-bottom: 18px;
 	}
+	.ps-hero .ps-headline-1 {
+		margin-bottom: 20px;
+	}
     .ps-hero img {
         width: 100%;
     }

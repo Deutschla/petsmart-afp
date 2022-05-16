@@ -19,6 +19,18 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 ?>
 <!---->
 <style>
+	.ps-card-1 .ps-label {
+		margin: 28px 0 18px;
+	}
+	.ps-card-1 .ps-headline-2 {
+		margin-bottom: 18px;
+	}
+	.ps-card-1 .ps-body-copy-2 {
+		margin: 0;
+	}
+	.ps-card-1 .cta {
+		margin-bottom: 22px;
+	}
 	.rt-image img {
 		transform: none !important;
 	}
@@ -30,9 +42,11 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 			<?php echo wp_kses_post( $main_image ); ?>
 		</div>
 		<div class="entry-content">
-			<h4><?php echo esc_html( $data['ps_label'] ); ?></h4>
-			<h1><?php echo esc_html( $data['ps_title'] ); ?></h1>
-			<div class="post_excerpt"><p><?php echo esc_html( $data['ps_p_content'] ); ?></p></div>
+			<label class="ps-label"><?php echo esc_html( $data['ps_label'] ); ?></label>
+			<h2 class="ps-headline-2"><?php echo esc_html( $data['ps_title'] ); ?></h2>
+			<div class="post_excerpt">
+				<p class="ps-body-copy-2"><?php echo esc_html( $data['ps_p_content'] ); ?></p>
+			</div>
 			<?php if ( ! empty( $data['button_url'] ) ) { ?>
 				<br/>
 				<div class="cta">
