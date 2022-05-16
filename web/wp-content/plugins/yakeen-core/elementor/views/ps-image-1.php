@@ -19,9 +19,8 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 ?>
 
 <style>
-	.ps-featured-content .featured-content-header .ps-headline-2 {
-		color: #DD2834;
-		margin: 25px auto;
+	.ps-featured-content .ps-headline-2 {
+    	margin-bottom: 20px
 	}
 	.ps-featured-content .ps-label {
 		margin-bottom: 18px;
