@@ -19,6 +19,19 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 ?>
 
 <style>
+	.hero-img-entry-content-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.ps-hero-img-container {
+		width: 100%;
+	}
+	.ps-hero .entry-content {
+		width: 100%;
+		max-width: 1116px;
+	}
+
 	.ps-hero .ps-label {
 		margin-bottom: 18px;
 	}
@@ -41,8 +54,8 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 
 
 <div class="ps-hero col-12 mx-auto rt-grid-item blog-layout-3" data-wow-duration="1.5s">
-	<div class="blog-box show-image no-preview">
-		<div class="blog-img-holder">
+	<div class="hero-img-entry-content-container blog-box show-image no-preview">
+		<div class="ps-hero-img-container blog-img-holder">
 			<div class="blog-img normal">
 				<?php echo wp_kses_post( $main_image ); ?>
 			</div>
