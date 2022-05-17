@@ -19,15 +19,21 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 ?>
 
 <style>
-	.ps-hero .ps-label {
+	.ps-hero-2 .ps-label {
 		margin-bottom: 18px;
 	}
+	.ps-hero-2 .ps-headline-2 {
+		margin-bottom: 20px;
+	}
+    .ps-hero-2 img {
+        width: 100%;
+    }
 	
 	@media (max-width: 767px) {
-		.ps-hero .entry-content {
+		.ps-hero-2 .entry-content {
 			padding: 30px 10px 30px !important;
 		}
-		.ps-hero .ps-body-copy-2 {
+		.ps-hero-2 .ps-body-copy-2 {
 			margin: 0;
 		}
 	}
@@ -42,7 +48,6 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 			</div>
 		</div>
 		<div class="entry-content">
-            <h2>2</h2>
 			<?php if ( ! empty( $data['rt_label'] ) ) { ?>
 				<label class="ps-label"><?php echo esc_html( $data['rt_label'] ); ?></label>
 			<?php } ?>

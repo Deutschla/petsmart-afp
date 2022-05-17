@@ -33,7 +33,7 @@ $main_image = Group_Control_Image_Size::get_attachment_image_html($data, 'icon_i
 		.ps-hero .entry-content {
 			padding: 30px 10px 30px !important;
 		}
-		.ps-hero .ps-body-copy-2 {
+		.ps-hero .ps-body-copy-1 {
 			margin: 0;
 		}
 	}
