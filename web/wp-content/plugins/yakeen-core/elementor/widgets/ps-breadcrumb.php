@@ -53,6 +53,12 @@ class PS_Breadcrumb extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Category', 'yakeen-core' ),
 				'default' => esc_html__( 'Lorem', 'yakeen-core' ),
 			),
+			array(
+                'type'        => Controls_Manager::URL,
+                'id'          => 'button_url',
+                'label'       => esc_html__( 'Title URL', 'yakeen-core' ),
+                'placeholder' => 'https://your-link.com',
+            ),
 
 			array(
 				'mode' => 'section_end',
