@@ -27,5 +27,5 @@ $location_manager = Module::instance()->get_locations_manager();
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 <?php $location_manager->do_location( 'header' ); ?>
